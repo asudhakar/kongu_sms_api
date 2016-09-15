@@ -3,11 +3,11 @@ include('../controllers/function.php');
 $names = $_POST['name'];
 $path = $_POST['path'];
 $name_and_number = base64_encode(serialize($names));
-
+print_r($names);
 
 ?>
 
-<html><head>
+<!-- <html><head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="robots" content="noindex, nofollow">
   <meta name="googlebot" content="noindex, nofollow">
@@ -138,4 +138,4 @@ function updateCount() {
 </script>
 
 
-</body></html>
+</body></html> -->
