@@ -61,7 +61,8 @@
           foreach ($number_and_names as $number => $names) {
             foreach ($names as $key => $name) {
               $html1 = $html1.'
-  <label><input type="checkbox" name = "name[]" value="'.$name.','.$number.'">'.$name.'('.$number.')</label><br>';
+  <label>'.$i.'<input type="checkbox" name = "name[]" value="'.$name.','.$number.'">'.$name.'('.$number.')</label><br>';
+  $i++;
             }
           }$totalhtml = $totalhtml.'<div class="checkbox"><fieldset>'.$html1.'</fieldset></div><hr/>';
         }
