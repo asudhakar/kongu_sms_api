@@ -1,7 +1,7 @@
 <?php 
 include('../controllers/function.php');
-$names = $_POST['name'];
-$path = $_POST['path'];
+$names = $_GET['name'];
+$path = $_GET['path'];
 $name_and_number = base64_encode(serialize($names));
 print_r($names);
 
